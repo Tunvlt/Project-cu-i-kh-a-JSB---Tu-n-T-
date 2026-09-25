@@ -1,0 +1,85 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #334155;
+}
+
+.navbar-brand {
+    font-weight: 800;
+    font-size: 1.6rem;
+    font-family: 'Inter', sans-serif;
+    color: #0d6efd !important;
+    letter-spacing: -0.5px;
+}
+
+.navbar.sticky-top {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    z-index: 1030;
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+.dropdown-item:active {
+    background-color: #0d6efd;
+}
+
+/* --- STYLES CHO CART --- */
+.cart-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    background-color: #ffffff;
+}
+
+.cart-img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.btn-quantity {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.input-quantity {
+    width: 45px;
+    text-align: center;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.summary-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+}
+
+.btn-checkout {
+    padding: 12px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+/* Ẩn mũi tên mặc định của input type="number" */
+.input-quantity::-webkit-inner-spin-button,
+.input-quantity::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

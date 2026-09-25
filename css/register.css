@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1c2d42 0%, #111a28 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #333;
+}
+
+.navbar-brand {
+    font-weight: 800;
+    font-size: 1.6rem;
+    font-family: 'Inter', sans-serif;
+    color: #0d6efd !important;
+    letter-spacing: -0.5px;
+}
+
+.navbar.sticky-top {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    z-index: 1030;
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+.page-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.register-container {
+    background: #ffffff;
+    padding: 36px 32px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+}
+
+.brand-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    color: #1877f2;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.form-subtitle {
+    text-align: center;
+    font-size: 14px;
+    color: #65676b;
+    margin-bottom: 24px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1c2d42;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 11px 14px;
+    font-size: 14px;
+    border: 1.5px solid #e4e6eb;
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.2s ease;
+    background-color: #f8f9fa;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #1877f2;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(24, 119, 242, 0.15);
+}
+
+#register-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #1877f2;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    margin-top: 10px;
+    box-shadow: 0 4px 12px rgba(24, 119, 242, 0.25);
+}
+
+#register-btn:hover {
+    background-color: #166fe5;
+}
+
+#register-btn:active {
+    transform: scale(0.98);
+}
