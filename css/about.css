@@ -1,0 +1,96 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #334155;
+}
+
+.navbar-brand {
+    font-weight: 800;
+    font-size: 1.6rem;
+    font-family: 'Inter', sans-serif;
+    color: #0d6efd !important;
+    letter-spacing: -0.5px;
+}
+
+.navbar.sticky-top {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    z-index: 1030;
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+.dropdown-item:active {
+    background-color: #0d6efd;
+}
+
+/* Hero Banner */
+.about-hero {
+    background-color: #101f36;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 4rem 2rem;
+    margin-top: 2rem;
+}
+
+.about-hero h1 {
+    font-size: 2.75rem;
+    font-weight: 800;
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+}
+
+.about-hero p {
+    color: #94a3b8;
+    font-size: 1.1rem;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* Value Cards Style */
+.value-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 2rem;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.value-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    transform: translateY(-4px);
+}
+
+.icon-box {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.icon-orange {
+    background-color: #fff7ed;
+    color: #f97316;
+}
+
+.icon-red {
+    background-color: #fef2f2;
+    color: #ef4444;
+}
+
+.icon-blue {
+    background-color: #eff6ff;
+    color: #3b82f6;
+}
