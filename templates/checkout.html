@@ -15,19 +15,18 @@
 </head>
 
 <body>
-
     <!-- Navbar Thể Thao -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top pt-3">
         <div class="container">
             <!-- Logo -->
             <a class="navbar-brand me-auto me-lg-4" href="index.html">SPORT STORE</a>
 
-            <!-- Nút Giỏ Hàng Mobile -->
+            <!-- Nút Giỏ Hàng -->
             <a href="cart.html" class="btn btn-primary position-relative d-lg-none me-2">
                 <i class="bi bi-cart3 fs-6"></i>
             </a>
 
-            <!-- Nút Toggle Menu -->
+            <!-- Nút 3 gạch -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -36,9 +35,12 @@
             <!-- Menu Nội Dung -->
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Trang chủ -->
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Trang chủ</a>
+                        <a class="nav-link" href="index.html">Trang chủ</a>
                     </li>
+
+                    <!-- Trang danh mục lớn -->
                     <li class="nav-item">
                         <a class="nav-link" href="categories.html">Danh mục</a>
                     </li>
@@ -50,11 +52,11 @@
                             Bóng đá
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item fw-bold text-primary" href="products_category.html?cat=bong-da">Tất cả sản phẩm bóng đá</a></li>
+                            <li><a class="dropdown-item fw-bold text-primary" href="footbal_cat.html">Tất cả sản phẩm bóng đá</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="products_category.html?cat=giay-da-bong">Giày đá bóng</a></li>
-                            <li><a class="dropdown-item" href="products_category.html?cat=ao-clb">Áo đấu CLB / Đội tuyển</a></li>
-                            <li><a class="dropdown-item" href="products_category.html?cat=ao-tap">Áo tập & Giữ nhiệt</a></li>
+                            <li><a class="dropdown-item" href="boots_cat.html">Giày đá bóng</a></li>
+                            <li><a class="dropdown-item" href="jersy_cat.html">Áo đấu CLB / Đội tuyển</a></li>
+                            <li><a class="dropdown-item" href="tranning_jersy_cat.html">Áo tập & Giữ nhiệt</a></li>
                         </ul>
                     </li>
 
@@ -65,16 +67,19 @@
                             Chạy bộ
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item fw-bold text-primary" href="products_category.html?cat=chay-bo">Tất cả sản phẩm chạy bộ</a></li>
+                            <li><a class="dropdown-item fw-bold text-primary" href="running_cat.html">Tất cả sản phẩm chạy bộ</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="products_category.html?cat=giay-chay-bo">Giày chạy bộ</a></li>
-                            <li><a class="dropdown-item" href="products_category.html?cat=trang-phuc-chay">Trang phục chạy bộ</a></li>
+                            <li><a class="dropdown-item" href="running_shoes_cat.html">Giày chạy bộ</a></li>
+                            <li><a class="dropdown-item" href="running_clothes_cat.html">Trang phục chạy bộ</a></li>
                         </ul>
                     </li>
 
+                    <!-- Phụ kiện -->
                     <li class="nav-item">
-                        <a class="nav-link" href="products_category.html?cat=phu-kien">Phụ kiện</a>
+                        <a class="nav-link" href="accessories_cat.html">Phụ kiện (Bóng, Marker...)</a>
                     </li>
+
+                    <!-- Giới thiệu & Liên hệ -->
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">Giới thiệu</a>
                     </li>
@@ -84,7 +89,7 @@
                 </ul>
 
                 <!-- Form Tìm kiếm & Giỏ hàng Desktop -->
-                <div class="d-flex align-items-center gap-2">
+                <div class="d-flex align-items-center gap-2 mobile-search">
                     <form class="d-flex w-100" role="search" action="products_category.html" method="GET">
                         <div class="input-group w-100">
                             <input class="form-control" type="search" placeholder="Tìm giày, áo đấu..." aria-label="Search" />
@@ -92,6 +97,7 @@
                         </div>
                     </form>
 
+                    <!-- Cart Button trên Máy tính (Desktop) -->
                     <a href="cart.html" class="btn btn-primary position-relative d-none d-lg-flex align-items-center gap-1">
                         <i class="bi bi-cart3 fs-5"></i>
                     </a>
@@ -99,6 +105,8 @@
             </div>
         </div>
     </nav>
+
+    <hr class="my-0 text-muted">
 
     <!-- Khung chứa Form (Được căn giữa trang bên dưới Navbar) -->
     <main class="py-4 py-md-5 d-flex align-items-center">
