@@ -129,30 +129,30 @@
         </nav>
 
         <!-- Thông tin -->
-        <div class="row g-4">
+        <div class="row g-4 row-cols-lg-2">
             <!-- Ảnh -->
-            <div class="col-lg-6">
+            <div>
                 <div class="card border-0 shadow-sm p-3">
                     <div class="position-relative overflow-hidden rounded mb-3">
                         <img src="/images/p3/1.avif" class="img-fluid w-100 object-fit-cover rounded"
                             style="max-height:480px" alt="Puma Future 9 Match TT">
                         <span class="badge bg-success position-absolute top-0 start-0 m-3 fs-6">Mới</span>
                     </div>
-                    <div class="row g-2">
-                        <div class="col-3"><img src="/images/p3/1.avif" class="img-thumbnail border-primary w-100"
+                    <div class="row g-2 row-cols-4">
+                        <div><img src="/images/p3/1.avif" class="img-thumbnail border-primary w-100"
                                 style="height:120px;object-fit:cover" alt="Góc 1"></div>
-                        <div class="col-3"><img src="/images/p3/2.avif" class="img-thumbnail w-100"
+                        <div><img src="/images/p3/2.avif" class="img-thumbnail w-100"
                                 style="height:120px;object-fit:cover" alt="Góc 2"></div>
-                        <div class="col-3"><img src="/images/p3/3.avif" class="img-thumbnail w-100"
+                        <div><img src="/images/p3/3.avif" class="img-thumbnail w-100"
                                 style="height:120px;object-fit:cover" alt="Góc 3"></div>
-                        <div class="col-3"><img src="/images/p3/4.avif" class="img-thumbnail w-100"
+                        <div><img src="/images/p3/4.avif" class="img-thumbnail w-100"
                                 style="height:120px;object-fit:cover" alt="Góc 4"></div>
                     </div>
                 </div>
             </div>
 
             <!-- Thông tin -->
-            <div class="col-lg-6">
+            <div>
                 <div class="card border-0 shadow-sm p-4 h-100">
                     <span class="badge bg-primary-subtle text-primary border border-primary w-auto mb-2 align-self-start">
                         Chính hãng Puma
@@ -213,23 +213,23 @@
                     </form>
 
                     <div class="border-top pt-3 mt-auto">
-                        <div class="row g-3">
-                            <div class="col-6">
+                        <div class="row g-3 row-cols-2">
+                            <div>
                                 <div class="d-flex align-items-center gap-2"><i
                                         class="bi bi-shield-check text-primary fs-4"></i><span class="small">100% Chính
                                         hãng</span></div>
                             </div>
-                            <div class="col-6">
+                            <div>
                                 <div class="d-flex align-items-center gap-2"><i
                                         class="bi bi-truck text-primary fs-4"></i><span class="small">Giao hỏa tốc
                                         2H</span></div>
                             </div>
-                            <div class="col-6">
+                            <div>
                                 <div class="d-flex align-items-center gap-2"><i
                                         class="bi bi-arrow-repeat text-primary fs-4"></i><span class="small">Đổi trả 7
                                         ngày</span></div>
                             </div>
-                            <div class="col-6">
+                            <div>
                                 <div class="d-flex align-items-center gap-2"><i
                                         class="bi bi-headset text-primary fs-4"></i><span class="small">Tư vấn
                                         24/7</span></div>
@@ -295,8 +295,8 @@
     <!-- Footer -->
     <footer class="bg-dark text-white pt-5 pb-3 mt-auto">
         <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
+            <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-4">
+                <div>
                     <h5 class="fw-bold text-primary mb-3">SPORT STORE</h5>
                     <p class="text-secondary small">Hệ thống bán lẻ đồ thể thao, giày đá bóng, trang phục chạy bộ và phụ
                         kiện chính hãng hàng đầu.</p>
@@ -312,7 +312,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-2 col-md-6">
+                <div>
                     <h6 class="fw-bold mb-3">Danh Mục</h6>
                     <ul class="list-unstyled small">
                         <li class="mb-2"><a href="boots_cat.html" class="text-secondary text-decoration-none">Giày đá
@@ -326,7 +326,7 @@
                     </ul>
                 </div>
 
-                <div class="col-lg-3 col-md-6">
+                <div>
                     <h6 class="fw-bold mb-3">Hỗ Trợ Khách Hàng</h6>
                     <ul class="list-unstyled small">
                         <li class="mb-2"><a href="contact.html" class="text-secondary text-decoration-none">Chính sách
@@ -340,7 +340,7 @@
                     </ul>
                 </div>
 
-                <div class="col-lg-3 col-md-6">
+                <div>
                     <h6 class="fw-bold mb-3">Đăng Ký Nhận Tin</h6>
                     <p class="text-secondary small">Nhận thông báo ưu đãi và sản phẩm mới nhất.</p>
                     <form class="input-group input-group-sm">
@@ -361,7 +361,7 @@
     <!-- JavaScript Chuyển Hình Ảnh Thu Nhỏ -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            const mainImage = document.querySelector('.col-lg-6 .card img.img-fluid');
+            const mainImage = document.querySelector('.row.row-cols-lg-2 > div .card img.img-fluid');
             const thumbnails = document.querySelectorAll('.row.g-2 img.img-thumbnail');
             thumbnails.forEach(function (thumb) {
                 thumb.style.cursor = 'pointer';

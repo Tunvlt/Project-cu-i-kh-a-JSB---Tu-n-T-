@@ -121,10 +121,10 @@
     <main class="py-4 py-md-5 d-flex align-items-center">
         <div class="container">
             <form action="submit.html" method="GET" class="bg-white p-4 p-md-5 rounded-4" id="form">
-                <div class="row g-4">
+                <div class="row g-4 row-cols-1 row-cols-md-2">
 
                     <!-- Billing Address Section -->
-                    <div class="col-12 col-md-6">
+                    <div>
                         <h4 class="text-danger fw-bold mb-3">Billing Address</h4>
 
                         <div class="mb-3">
@@ -147,12 +147,12 @@
                             <input type="text" id="city" name="city" placeholder="Enter City" class="form-control" />
                         </div>
 
-                        <div class="row g-2">
-                            <div class="col-6">
+                        <div class="row g-2 row-cols-2">
+                            <div>
                                 <label for="state" class="form-label fw-medium">State</label>
                                 <input type="text" id="state" name="state" placeholder="Enter State" class="form-control" />
                             </div>
-                            <div class="col-6">
+                            <div>
                                 <label for="zipcode" class="form-label fw-medium">Zip Code</label>
                                 <input type="text" id="zipcode" name="zipcode" placeholder="123 456" class="form-control" />
                             </div>
@@ -160,7 +160,7 @@
                     </div>
 
                     <!-- Payment Section -->
-                    <div class="col-12 col-md-6">
+                    <div>
                         <h4 class="text-danger fw-bold mb-3">Payment</h4>
 
                         <div class="mb-3">
@@ -202,8 +202,8 @@
                             </select>
                         </div>
 
-                        <div class="row g-2">
-                            <div class="col-6">
+                        <div class="row g-2 row-cols-2">
+                            <div>
                                 <label for="expy" class="form-label fw-medium">Exp Year</label>
                                 <select name="expy" id="expy" class="form-select" required>
                                     <option value="">Choose Year</option>
@@ -309,7 +309,7 @@
                                     <option value="2100">Year 2100</option>
                                 </select>
                             </div>
-                            <div class="col-6">
+                            <div>
                                 <label for="cvv" class="form-label fw-medium">CVV</label>
                                 <input type="number" id="cvv" name="cvv" placeholder="1234" class="form-control" />
                             </div>
@@ -329,8 +329,8 @@
     <!-- Footer -->
     <footer class="bg-dark text-white pt-5 pb-3 mt-auto">
         <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
+            <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-4">
+                <div>
                     <h5 class="fw-bold text-primary mb-3">SPORT STORE</h5>
                     <p class="text-secondary small">
                         Hệ thống bán lẻ đồ thể thao, giày đá bóng, trang phục chạy bộ và phụ kiện chính hãng hàng đầu.
@@ -343,7 +343,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-2 col-md-6">
+                <div>
                     <h6 class="fw-bold mb-3">Danh Mục</h6>
                     <ul class="list-unstyled small">
                         <li class="mb-2"><a href="boots_cat.html" class="text-secondary text-decoration-none">Giày đá bóng</a></li>
@@ -353,7 +353,7 @@
                     </ul>
                 </div>
 
-                <div class="col-lg-3 col-md-6">
+                <div>
                     <h6 class="fw-bold mb-3">Hỗ Trợ Khách Hàng</h6>
                     <ul class="list-unstyled small">
                         <li class="mb-2"><a href="contact.html" class="text-secondary text-decoration-none">Chính sách đổi trả</a></li>
@@ -363,7 +363,7 @@
                     </ul>
                 </div>
 
-                <div class="col-lg-3 col-md-6">
+                <div>
                     <h6 class="fw-bold mb-3">Đăng Ký Nhận Tin</h6>
                     <p class="text-secondary small">Nhận thông báo ưu đãi và sản phẩm mới nhất.</p>
                     <form class="input-group input-group-sm">
